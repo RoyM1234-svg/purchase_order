@@ -57,22 +57,13 @@ def main():
     fill_konstrok(df_konstrok,name)
     fill_pirzool(df_pirzool,name)
 
-    # final_df = df_konstrok.groupby(['NAME','ITEM']).sum()
-    # final_df = pd.pivot_table(df_konstrok, index = ['NAME'], columns = ['ITEM'],values = ['SUM LEN','TOTAL KG'], aggfunc = np.sum)
-    # print(final_df)
-    
-  
-
-    
 
     konstrok_file = "konstrok.csv"
     pirzool_file = "pirzool.csv"
-    # diag_file = "diag.csv"
-    # pivot_file = "pivot.csv"
+  
     df_konstrok.to_csv(konstrok_file, index=False, header = False)
     df_pirzool.to_csv(pirzool_file, index = False, header = False)
-    # df_diag.to_csv(diag_file, index = False)
-    # final_df.to_csv(pivot_file)
+  
 
     
 
